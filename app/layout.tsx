@@ -8,9 +8,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation",
+  title: "Anas and Zulha Wedding",
   description: "Dev Portfolio for nupers",
+  icons: {
+    icon: "/bride.png",
+  },
 };
+
 
 export default function RootLayout({
   children,
