@@ -17,7 +17,7 @@ export default function Footer() {
           <br />
           <span className="block mt-2">Kami yang berbahagia,</span>
         </p>
-        <h3 className="text-heading sm:text-2xl font-semibold mt-2">Zulha &amp; Anas</h3>
+        <h3 className="md:text-heading sm:text-md font-semibold mt-2">Zulha &amp; Anas</h3>
       </motion.div>
 
       <motion.div
