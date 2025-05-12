@@ -12,10 +12,8 @@ export default function MusicPlayer() {
 
     if (isPlaying) {
       audioRef.current.pause();
-      setIsPlaying(false);
     } else {
       audioRef.current.play();
-      setIsPlaying(true);
     }
   };
 
@@ -29,9 +27,26 @@ export default function MusicPlayer() {
     audio.addEventListener('play', handlePlay);
     audio.addEventListener('pause', handlePause);
 
+    // Pause saat pindah tab
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        audio.pause();
+      }
+    };
+
+    // Pause sebelum unload (misalnya tutup tab atau refresh)
+    const handleBeforeUnload = () => {
+      audio.pause();
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
     return () => {
       audio.removeEventListener('play', handlePlay);
       audio.removeEventListener('pause', handlePause);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, []);
 
