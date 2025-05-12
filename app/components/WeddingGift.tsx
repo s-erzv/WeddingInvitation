@@ -17,7 +17,7 @@ const accountData = [
   },
   {
     bank: 'Alamat',
-    number: 'Kp. Pabuaran RT 02/07 No. 129, Kel. Cicadas, Kec. Gunungputri, Kab. Bogor 16964',
+    number: 'Kp. Pabuaran RT 01/25 No. 129, Kel. Cicadas, Kec. Gunungputri, Kab. Bogor 16964',
     name: '',
   },
 ];

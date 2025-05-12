@@ -38,7 +38,7 @@ const Doa = () => {
           viewport={{ once: true }}
           className="mt-4 text-base md:text-2xl text-[#FBE8E7] font-light leading-relaxed"
         >
-          Semoga Allah Memberkahimu Di Waktu Bahagia Dan Memberkahimu Di Waktu Susah, Serta Semoga Allah Mempersatukan Kalian Berdua Dalam Kebaikan.
+          Semoga Allah memberkahimu di saat bahagia maupun di saat sulit, serta mempersatukan kalian berdua dalam kebaikan.
         </motion.p>
       </div>
     </section>

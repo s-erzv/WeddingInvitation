@@ -13,10 +13,9 @@ export default function Footer() {
         viewport={{ once: true }}
       >
         <p className="text-sm sm:text-base max-w-3xl mx-auto leading-relaxed px-14">
-          Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i.
-          berkenan hadir untuk memberikan doa restunya kami ucapkan terima kasih.
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.
           <br />
-          <span className="block mt-2">Kami yang berbahagia</span>
+          <span className="block mt-2">Kami yang berbahagia,</span>
         </p>
         <h3 className="text-heading sm:text-2xl font-semibold mt-2">Zulha &amp; Anas</h3>
       </motion.div>
